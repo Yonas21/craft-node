@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const { success, error } = require('consola');
 const passport = require('passport');
-const config = require('./Phone-Verification/config');
+const config = require('./config/config');
 
 // configure twilio
 const client = require('twilio')(config.accountSID, config.authToken);
